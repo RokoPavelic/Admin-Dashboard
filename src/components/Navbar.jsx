@@ -26,6 +26,8 @@ const NavButton = ({ title, customFunc, icon, color, dotColor }) => (
   </TooltipComponent>
 );
 
+
+
 const Navbar = () => {
   const {
     activeMenu,
@@ -98,10 +100,10 @@ const Navbar = () => {
             <MdKeyboardArrowDown className="text-gray-400 text-14" />
           </div>
         </TooltipComponent>
-        {isClicked.cart && <Cart />}
-        {isClicked.chat && <Chat />}
-        {isClicked.notification && <Notification />}
-        {isClicked.userProfile && <UserProfile />}
+        {isClicked?.cart && <Cart />}
+        {isClicked?.chat && <Chat />}
+        {isClicked?.notification && <Notification />}
+        {isClicked?.userProfile && <UserProfile />}
       </div>
     </div>
   );
